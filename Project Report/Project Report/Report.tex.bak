@@ -1,0 +1,66 @@
+\documentclass[a4]{article}
+
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{hyperref}
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ left=1in,
+ right=1in,
+ top=1in,
+ bottom=1in,
+ }
+
+\title{}
+\author{
+		\begin{tabular}{ll}
+			\begin{tabular}{c}
+				\includegraphics[scale=0.6]{logo}
+			\end{tabular} & 
+			\begin{tabular}{c}
+			\Large{United International University}\\
+			\Large{Department of Computer Science and Engineering}\\
+			\end{tabular} 
+		\end{tabular}
+				}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+\pagenumbering{gobble}
+
+\begin{Large}
+
+\begin{center}
+	\begin{tabular}{c}
+		Project Report:\\
+		Database Management System Laboratory\\
+		Summer - 2016\\
+		
+		Project Name:\\
+		ABC \\ %%%%%%%% Add your project name here.
+		
+		Team ID: \\%%%%%%%%%you will get it after submitting up to ERD
+		
+		Project Members:\\
+		\begin{tabular}{|c|c|c|c|}
+			\hline
+			\textbf{SL} & \textbf{ID} & \textbf{Section} & \textbf{Name} \\ \hline
+			1 & & & \\ \hline
+			2 & & & \\ \hline
+			3 & & & \\ \hline
+			4 & & &\\ \hline
+		\end{tabular}
+	\end{tabular}
+\end{center}
+\end{Large}
+
+\newpage
+
+
+\end{document}

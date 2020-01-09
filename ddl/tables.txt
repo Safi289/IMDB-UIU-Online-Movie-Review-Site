@@ -1,0 +1,143 @@
+create table movie
+	(movie_id	varchar(15),
+	 title		varchar(50),
+	 release_year   int(4),
+	 rating		decimal(2,1),
+	 vote		int(10),
+	 run_time       int(10),
+	 story_line     text,
+	 primary key (movie_id)
+	);
+
+create table person
+	(person_id	varchar(15),
+	 name		varchar(50),
+	 date_of_birth  date,
+	 gender		varchar(20),
+	 primary key (person_id)
+	);
+
+
+create table genre
+	(genre_id	varchar(15),
+	 title		varchar(50),
+	 primary key (genre_id)
+	);
+
+create table language
+	(language_id	varchar(15),
+	 name		varchar(50),
+	 primary key (language_id)
+	);
+
+create table country
+	(country_id	varchar(15),
+	 name		varchar(50),
+	 primary key (country_id)
+	);
+
+create table location
+	(location_id	varchar(15),
+	 name		varchar(50),
+	 primary key (location_id)
+	);
+
+create table production
+	(production_id	varchar(15),
+	 title		varchar(50),
+	 primary key (production_id)
+	);
+
+create table movie_director
+	(movie_id	varchar(15),
+	 person_id	varchar(15),
+	 primary key (movie_id),
+	 foreign key (movie_id) references movie(movie_id) on delete cascade,
+	 foreign key (person_id) references person(person_id) on delete cascade
+	);
+
+create table movie_writer
+	(movie_id	varchar(15),
+	 person_id	varchar(15),
+	 primary key (movie_id),
+	 foreign key (movie_id) references movie(movie_id) on delete cascade,
+	 foreign key (person_id) references person(person_id) on delete cascade
+	);
+
+create table movie_cast
+	(movie_id	varchar(15),
+	 person_id	varchar(15),
+	 primary key (movie_id, person_id),
+	 foreign key (movie_id) references movie(movie_id) on delete cascade,
+	 foreign key (person_id) references person(person_id) on delete cascade
+	);
+
+create table movie_genre
+	(movie_id	varchar(15),
+	 genre_id	varchar(15),
+	 primary key (movie_id, genre_id),
+	 foreign key (movie_id) references movie(movie_id) on delete cascade,
+	 foreign key (genre_id) references genre(genre_id) on delete cascade
+	);
+
+create table movie_language
+	(movie_id	varchar(15),
+	 language_id	varchar(15),
+	 primary key (movie_id),
+	 foreign key (movie_id) references movie(movie_id) on delete cascade,
+	 foreign key (language_id) references language(language_id) on delete cascade
+	);
+
+create table movie_country
+	(movie_id	varchar(15),
+	 country_id	varchar(15),
+	 primary key (movie_id),
+	 foreign key (movie_id) references movie(movie_id) on delete cascade,
+	 foreign key (country_id) references country(country_id) on delete cascade
+	);
+
+create table movie_location
+	(movie_id	varchar(15),
+	 location_id	varchar(15),
+	 primary key (movie_id,location_id),
+	 foreign key (movie_id) references movie(movie_id) on delete cascade,
+	 foreign key (location_id) references location(location_id) on delete cascade
+	);
+
+create table country_location
+	(location_id	varchar(15),
+	 country_id	varchar(15),
+	 primary key (location_id),
+	 foreign key (location_id) references location(location_id) on delete cascade,
+	 foreign key (country_id) references country(country_id) on delete cascade
+	);
+
+create table movie_produce
+	(movie_id	varchar(15),
+	 production_id	varchar(15),
+	 primary key (movie_id),
+	 foreign key (movie_id) references movie(movie_id) on delete cascade,
+	 foreign key (production_id) references production(production_id) on delete cascade
+	);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

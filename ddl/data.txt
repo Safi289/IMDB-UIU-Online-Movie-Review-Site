@@ -1,0 +1,172 @@
+add attribute:
+alter table (table)
+add (attribute) (type)
+
+drop attribute:
+alter table (table)
+drop attribute
+
+update data:
+update (table)
+set (attribute) =''
+where (attribute) =''
+
+delete data:
+delete from (table)
+where (attribute) =''
+
+drop table:
+drop table movie
+
+insert into movie values ('01', 'evil dead',1981,7.5,155976,85,"Five college students take time off to spend a peaceful vacation in a remote cabin. A book and audio tape is discovered, and its evil is found to be powerful once the incantations are read out loud. The friends find themselves helpless to stop the evil as it takes them one by one, with only one survivor left with the evil dead and desperately tries to fight to live until morning.");
+insert into movie values ('02', 'texas chain saw messacre',1974,7.5,109379,83,"En route to visit their grandfather's grave (which has apparently been ritualistically desecrated), five teenagers drive past a slaughterhouse, pick up (and quickly drop) a sinister hitch-hiker, eat some delicious home-cured meat at a roadside gas station, before ending up at the old family home... where they're plunged into a never-ending nightmare as they meet a family of cannibals who more than make up in power tools what they lack in social skills...");
+insert into movie values ('03', 'childs play',1988,6.6,69244,87,"When Charles Lee Ray needs to get quick escape from cop Mike Norris, he takes his soul and buries it into playful, seemingly good guy doll Chucky. Little does he know a little boy by the name of Andy Barclay will be the new owner of him soon-to-come. Charles confides in Andy while he commits numerous murders. Once the adults accept Andy's story as truth, it's too ");
+insert into movie values ('04', 'shawshank redemption',1994,9.3,1884404,142,"Chronicles the experiences of a formerly successful banker as a prisoner in the gloomy jailhouse of Shawshank after being found guilty of a crime he did not commit. The film portrays the man's unique way of dealing with his new, torturous life; along the way he befriends a number of fellow prisoners, most notably a wise long-term inmate named Red.");
+insert into movie values ('05', 'molot',2016,4.8,163,111,"Victor Stroev aka Russian Hammer is a youth Mix Fight champion willing to win the main fight of his career - the World Champion title. Hammer is right up there as a chance encounter turning into a fight with a sports mobster Shark ends up to be a tragedy for Victor. Victor gets into a terrible car crash that makes it doubtful that he will ever be able to go on with his career in sports, any blow can kill him. Vera whom Shark is trying to get, chooses Victor which makes Shark even more furious. Now Shark will do anything to make Russian Hammer get on the ring and make this fight the last one for him. Victor is not used to give up and ready to risk - he has to defend the honor of his country and the woman he loves. Vera realizes she has to betray Victor in order to save him.");
+
+insert into genre values ('01', 'horror');
+insert into genre values ('02', 'drama');
+insert into genre values ('03', 'action');
+insert into genre values ('04', 'fantasy');
+insert into genre values ('05', 'animation');
+insert into genre values ('06', 'thriller');
+insert into genre values ('07', 'comedy');
+insert into genre values ('08', 'musical');
+insert into genre values ('09', 'romance');
+insert into genre values ('10', 'war');
+insert into genre values ('11', 'sci-fi');
+insert into genre values ('12', 'biography');
+insert into genre values ('13', 'history');
+insert into genre values ('14', 'adventure');
+insert into genre values ('15', 'sport');
+insert into genre values ('16', 'family');
+insert into genre values ('17', 'crime');
+insert into genre values ('18', 'mystery');
+
+insert into language values ('01', 'english');
+insert into language values ('02', 'hindi');
+insert into language values ('03', 'benglai');
+insert into language values ('04', 'spanish');
+insert into language values ('05', 'german');
+insert into language values ('06', 'russian');
+insert into language values ('07', 'french');
+insert into language values ('08', 'italian');
+insert into language values ('09', 'maxican');
+insert into language values ('10', 'japanese');
+insert into language values ('11', 'russian');
+
+insert into country values ('01', 'america');
+insert into country values ('02', 'india');
+insert into country values ('03', 'bangladesh');
+insert into country values ('04', 'spain');
+insert into country values ('05', 'germany');
+insert into country values ('06', 'england');
+insert into country values ('07', 'australia');
+insert into country values ('08', 'canada');
+insert into country values ('09', 'russia');
+insert into country values ('10', 'france');
+insert into country values ('11', 'italy');
+insert into country values ('12', 'maxico');
+insert into country values ('13', 'japan');
+
+
+insert into location values ('01', 'michigan');
+insert into location values ('02', '1010 King Court, Kingsland, Texas, USA ');
+insert into location values ('03', 'Saint-Petersburg, Russia');
+insert into location values ('04', 'Brewster Building Apartments - 2800 N. Pine Grove Avenue, Lake View, Chicago, Illinois, USA');
+insert into location values ('05', 'St. Croix, U.S. Virgin Islands');
+
+
+
+insert into person values ('01', 'Morgan Freeman','1937-06-01' ,'male');
+insert into person values ('02', 'Frank Darabont','1959-01-28' ,'male');
+insert into person values ('03', 'oleg malovichko','1959-12-03','male');
+insert into person values ('04', 'Aleksey Chadov','1981-09-02','male');
+insert into person values ('05', 'Oksana Akinshina','1987-04-19','female');
+insert into person values ('06', 'Sam Raimi','1959-10-23','male');
+insert into person values ('07', 'Kim Henkel','1946-01-19','male');
+insert into person values ('08', 'Tobe Hooper','1943-01-25','male');
+insert into person values ('09', 'Marilyn Burns','1949-05-07','female');
+insert into person values ('10', 'Don Mancini','1963-01-25', 'male');
+insert into person values ('11', 'Tom Holland','1943-07-11', 'male');
+insert into person values ('12', 'Catherine Hicks','1951-08-06','female');
+insert into person values ('13', 'Stephen King','1947-09-21','male');
+insert into person values ('14', 'Nurbek Egen','1957-01-01','male');
+insert into person values ('15', ' Bruce Campbell','1958-06-22','male');
+
+
+insert into production values ('01', 'Content Matters');
+insert into production values ('02', 'Russian Golden Episodes');
+insert into production values ('03', 'Renaissance Pictures');
+insert into production values ('04', 'Vortex');
+insert into production values ('05', 'United Artists');
+
+
+insert into movie_genre values ('01', '01');
+insert into movie_genre values ('02', '01');
+insert into movie_genre values ('03', '01');
+insert into movie_genre values ('03', '06');
+insert into movie_genre values ('04', '02');
+insert into movie_genre values ('04', '17');
+insert into movie_genre values ('05', '02');
+
+
+
+
+
+insert into movie_language values ('01','01');
+insert into movie_language values ('02','01');
+insert into movie_language values ('03','01');
+insert into movie_language values ('04','01');
+insert into movie_language values ('05','11');
+
+insert into movie_country values ('01','01');
+insert into movie_country values ('02','01');
+insert into movie_country values ('03','01');
+insert into movie_country values ('04','01');
+insert into movie_country values ('05','09');
+
+
+
+insert into movie_location values ('01','01');
+insert into movie_location values ('02','02');
+insert into movie_location values ('03','04');
+insert into movie_location values ('04','05');
+insert into movie_location values ('05','03');
+
+insert into movie_director values ('01','06');
+insert into movie_director values ('02','08');
+insert into movie_director values ('03','11');
+insert into movie_director values ('04','02');
+insert into movie_director values ('05','14');
+
+
+insert into movie_writer values ('01','06');
+insert into movie_writer values ('02','07');
+insert into movie_writer values ('03','10');
+insert into movie_writer values ('04','13');
+insert into movie_writer values ('05','03');
+
+insert into movie_cast values ('01','15');
+insert into movie_cast values ('02','09');
+insert into movie_cast values ('03','12');
+insert into movie_cast values ('04','01');
+insert into movie_cast values ('05','04');
+insert into movie_cast values ('05','05');
+
+
+insert into country_location values ('01', '01');
+insert into country_location values ('02', '01');
+insert into country_location values ('03', '09');
+insert into country_location values ('04', '01');
+insert into country_location values ('05', '01');
+
+insert into movie_produce values ('01','03');
+insert into movie_produce values ('02','04');
+insert into movie_produce values ('03','05');
+insert into movie_produce values ('04','05');
+insert into movie_produce values ('05','02');
+
+
+
+
